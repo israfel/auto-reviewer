@@ -20,4 +20,4 @@ jobs:
           script: |
             const path = require('path')
             const scriptPath = path.resolve('./.github/scripts/auto-reviewer.js')
-            console.log(require(scriptPath)({context}))
+            require(scriptPath)({github, context})
